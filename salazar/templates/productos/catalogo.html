@@ -1,0 +1,299 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block extrahead %} 
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{% static '/css/catalogo.css' %}" type="text/css" media="screen,projection">
+<title>Catálogo</title>
+{% endblock extrahead%} 
+
+{% block content %} 
+<h1 style="text-align: center;">Catálogo decoraciones</h1>
+<!-- Carousel wrapper -->
+<div
+  id="carouselMultiItemExample"
+  class="carousel slide carousel-dark text-center"
+  data-mdb-ride="carousel"
+>
+  <!-- Controls -->
+  <div class="d-flex justify-content-center mb-4">
+  
+    
+  </div>
+  <!-- Inner -->
+  <div class="carousel-inner py-4">
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Baby shower</h5>
+                <a target="_blank" href="{% static 'img/baby.jpg' %}">
+                  <img id=imagen src="{% static 'img/baby.jpg' %}" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <p class="card-text">
+                  Decoracion para Baby Shower
+                </p>
+                <a style="text-align: center; " class="btn btn-info btn-sm" href="{% url 'baby'%}">Detalles</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Hombre</h5>
+                <a target="_blank" href="{% static 'img/img4.jpg' %}">
+                  <img id=imagen src="{% static 'img/img4.jpg' %}" alt="Forest" width="600" height="400">
+                </a>
+                <p class="card-text">
+                  Decoracion para hombre
+                </p>
+                <a style="text-align: center;" class="btn btn-info btn-sm" href="{% url 'hombre'%}">Detalles</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Niña</h5>
+                <a target="_blank" href="{% static 'img/masha.jpg' %}">
+                  <img id=imagen src="{% static 'img/masha.jpg' %}" alt="Northern Lights" width="600" height="400">
+                </a>
+                <p class="card-text">
+                  Decoracion para niña
+                </p>
+                <a style="text-align: center;" class="btn btn-info btn-sm"  href="{% url 'masha'%}">Detalles</a>
+              </div>
+            </div>
+          </div>
+
+         
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Matrimonio</h5>
+                <a target="_blank" href="{% static 'img/matrimonio.jpeg' %}">
+                  <img id=imagen src="{% static 'img/matrimonio.jpeg' %}" alt="Northern Lights" width="600" height="400">
+                </a>
+                <p class="card-text">
+                  Decoracion para matrimonio
+                </p>
+                <a style="text-align: center;" class="btn btn-info btn-sm" href="{% url 'matrimonio'%}">Detalles </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Niño</h5>
+                <a target="_blank" href="{% static 'img/minnie.jpg' %}">
+                  <img id=imagen src="{% static 'img/minnie.jpg' %}" alt="Northern Lights" width="600" height="400">
+                </a>
+                <p class="card-text">
+                  Decoracion para niño
+                </p>
+                <a style="text-align: center;" class="btn btn-info btn-sm" href="{% url 'minnie'%}">Detalles</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Mujer</h5>
+                <a target="_blank" href="{% static 'img/mujerr.jpg' %}">
+                  <img id=imagen src="{% static 'img/mujerr.jpg' %}" alt="Northern Lights" width="600" height="400">
+                </a>
+                <p class="card-text">
+                  Decoracion para mujer
+                </p>
+                <a style="text-align: center;" class="btn btn-info btn-sm" href="{% url 'mujer'%}">Detalles</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">15</h5>
+                <a target="_blank" href="{% static 'img/quinces.jpg' %}">
+                  <img id=imagen src="{% static 'img/quinces.jpg' %}" alt="Northern Lights" width="600" height="400">
+                </a>
+                <p class="card-text">
+                  Decoracion 15 años
+                </p>
+                <a style="text-align: center;" class="btn btn-info btn-sm" href="{% url 'quince'%}">Detalles</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Grado</h5>
+                <a target="_blank" href="{% static 'img/grado.jpg' %}">
+                  <img id=imagen src="{% static 'img/grado.jpg' %}" alt="Northern Lights" width="600" height="400">
+                </a>
+                <p class="card-text">
+                  Decoracion graduacion
+                </p>
+                <a style="text-align: center;" class="btn btn-info btn-sm" href="{% url 'unicornio'%}">Detalles</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card">
+              <div class="card-body">
+               
+                <h5 class="card-title">Primera Comunion</h5>
+                <a target="_blank" href="{% static 'img/comunion.jpg' %}">
+                  <img id=imagen src="{% static 'img/comunion.jpg' %}" alt="Northern Lights" width="600" height="400">
+                </a>
+                <p class="card-text">
+                  Decoracion primera comunion
+                </p>
+                <a style="text-align: center;" class="btn btn-info btn-sm "  href="{% url 'quinces'%}">Detalles</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12">
+            <div class="card">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
+                class="card-img-top"
+                alt="Fissure in Sandstone"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk
+                  of the card's content.
+                </p>
+                <a href="#!" class="btn btn-primary">Button</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/185.webp"
+                class="card-img-top"
+                alt="Storm Clouds"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk
+                  of the card's content.
+                </p>
+                <a href="#!" class="btn btn-primary">Button</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/186.webp"
+                class="card-img-top"
+                alt="Hot Air Balloons"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk
+                  of the card's content.
+                </p>
+                <a href="#!" class="btn btn-primary">Button</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <div class="card">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/187.webp"
+                class="card-img-top"
+                alt="Peaks Against the Starry Sky"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk
+                  of the card's content.
+                </p>
+                <a href="#!" class="btn btn-primary">Button</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+            <div class="card">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/188.webp"
+                class="card-img-top"
+                alt="Bridge Over Water"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk
+                  of the card's content.
+                </p>
+                <a href="#!" class="btn btn-primary">Button</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+            <div class="card">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/189.webp"
+                class="card-img-top"
+                alt="Purbeck Heritage Coast"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk
+                  of the card's content.
+                </p>
+                <a href="#!" class="btn btn-primary">Button</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Inner -->
+</div>
+<!-- Carousel wrapper -->
+
+{% endblock content %}
+
+
+  

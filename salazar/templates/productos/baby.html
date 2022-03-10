@@ -1,0 +1,33 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block extrahead %} 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css"> 
+<link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css" media="screen,projection">
+
+<title>Producto</title>
+{% endblock extrahead%} 
+
+
+{% block content %} 
+<h2 style="text-align: center;">Baby Shower</h2>
+<div class="container">
+  <div class="row">
+      
+      <main id="items" class="col-sm-8 row"></main>
+      
+      <aside class="col-sm-4">
+       <h2> <i class="	fas fa-shopping-cart"  ></i>Carrito de compras</h2>
+          
+          <ul id="carrito" class="list-group"></ul>
+          <hr>
+          
+          <p class="text-right">Total: <span id="total"></p>
+          <button id="boton-vaciar" class="btn btn-primary">Vaciar</button><br><br>
+          <a href="https://wa.link/wy3cvt" target="_parent"><button class="btn btn-primary">Efectuar compra</button></a>
+      </aside>
+  </div>
+</div><br><br><br><br><br>
+
+
+{% endblock content %} 
+

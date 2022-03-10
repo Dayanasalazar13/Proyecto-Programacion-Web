@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block extrahead %}
+<title>Consutla</title>
+{% endblock extrahead%} 
+
+{% block content %} 
+<section class="p-5">
+    <h1>Usuarios Registrados</h1>
+    <table class="table bg-white">
+       <thead class="thead-dark">
+           <tr>
+               <th scope="col">Nombre</th>
+               <th scope="col">Apellidos</th>
+               <th scope="col">correo</th>
+           </tr>
+       </thead>
+       <tbody>
+           {%  if usuarios %}
+           {% for user in usuarios %}
+           <tr>
+               <td>{{user.nombre}}</td>
+               <td>{{user.apellido}}</td>
+               <td>{{user.email}}</td>
+           </tr>
+
+           {% endfor %}
+           {% endif %}
+       </tbody>
+    </table>
+</section>
+{% endblock content %} 
+
