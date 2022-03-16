@@ -30,4 +30,33 @@
 </div><br><br><br><br><br>
 
 
+<script>
+  const baseDeDatos = [
+          {
+              id: 15,
+              nombre: 'Decoracion tono azul',
+              precio: 100000,
+              imagen: "{% static 'img/155.jpg' %}",
+              descripcion: 'no incluye mesas'
+          },
+          {
+              id: 16,
+              nombre: 'Decoracion tono morado',
+              precio: 150000,
+              imagen: "{% static 'img/img2.jpg' %}",
+              descripcion: 'mesas cuadradas'
+          },
+          {
+              id: 17,
+              nombre: 'Decoracion tono rosa',
+              precio: 210000,
+              imagen: "{% static 'img/quinces.jpg' %}",
+              descripcion: 'mesa entrochadas'
+          }
+  
+      ];
+  </script>
+  
+  <script src="{% static 'js/producto.js' %}"></script>
+
 {% endblock content %}

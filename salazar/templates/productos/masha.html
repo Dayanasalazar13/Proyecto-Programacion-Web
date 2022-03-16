@@ -25,5 +25,32 @@
   </div>
 </div><br><br><br><br><br>
 
-
+<script>
+  const baseDeDatos = [
+          {
+              id: 5,
+              nombre: 'Decoracion Minnie',
+              precio: 190000,
+              imagen: "{% static 'img/niña3.jpg' %}",
+              descripcion: 'No incluye nombre'
+          },
+          {
+              id: 6,
+              nombre: 'Decoracion Masha',
+              precio: 150000,
+              imagen: "{% static 'img/masha.jpg' %}",
+              descripcion: 'No incluye nombre'
+          },
+          {
+              id: 7,
+              nombre: 'Decoracion Barbie',
+              precio: 170000,
+              imagen: "{% static 'img/niñ.jpg' %}",
+              descripcion: 'No incluye nombre'
+          }
+  
+      ];
+  </script>
+  
+  <script src="{% static 'js/producto.js' %}"></script>
 {% endblock content %}

@@ -28,6 +28,27 @@
   </div>
 </div><br><br><br><br><br>
 
-
+<script>
+  const baseDeDatos = [
+          {
+              id: 3,
+              nombre: 'Baby Shower Niño',
+              precio: 210000,
+              imagen: "{% static 'img/baby.jpg' %}",
+              descripcion: 'Incluye nombre'
+          },
+          {
+              id: 4,
+              nombre: 'Baby Shower Niña',
+              precio: 190000,
+              imagen: "{% static 'img/babyniña.jpg' %}",
+              descripcion: 'No incluye recordatorios'
+          }
+  
+      ];
+  </script>
+  
+  <script src="{% static 'js/producto.js' %}"></script>
+ 
 {% endblock content %} 
 

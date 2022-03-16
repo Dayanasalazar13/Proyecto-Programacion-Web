@@ -26,5 +26,25 @@
   </div>
 </div><br><br><br><br><br>
 
-
+<script>
+  const baseDeDatos = [
+          {
+              id: 8,
+              nombre: 'Matrimonio',
+              precio: 290000,
+              imagen: "{% static 'img/matrimonio.jpg' %}",
+              descripcion: 'mesa sencilla'
+          },
+          {
+              id: 9,
+              nombre: 'Matrimonio',
+              precio: 250000,
+              imagen: "{% static 'img/matri.jpg' %}",
+              descripcion: 'mesas gemelas '
+          }
+  
+      ];
+  </script>
+  
+  <script src="{% static 'js/producto.js' %}"></script>
 {% endblock content %} 

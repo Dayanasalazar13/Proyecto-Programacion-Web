@@ -26,5 +26,27 @@
   </div>
 </div><br><br><br><br><br>
 
+<script>
+  const baseDeDatos = [
+          {
+              id: 20,
+              nombre: 'Primera Comunion Niña',
+              precio: 130000,
+              imagen: "{% static 'img/img6.jpg' %}",
+              descripcion: 'incluye luces'
+          },
+          {
+              id: 21,
+              nombre: 'Primera Comunion Niño',
+              precio: 80000,
+              imagen: "{% static 'img/comunion1.jpg' %}",
+              descripcion: 'incluye nombre'
+          }
+  
+      ];
+  </script>
+  
+  <script src="{% static 'js/producto.js' %}"></script>
+
 
 {% endblock content %}

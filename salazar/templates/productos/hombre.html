@@ -26,5 +26,33 @@
   </div>
 </div><br><br><br><br><br>
 
+<script>
+  const baseDeDatos = [
+          {
+              id: 1,
+              nombre: 'Cumpleaños con numero',
+              precio: 250000,
+              imagen: "{% static 'img/hombre2.jpg' %}",
+              descripcion: 'decoracion con puerta'
+          },
+          {
+              id: 2,
+              nombre: 'Cumpleaños hombre',
+              precio: 200000,
+              imagen: "{% static 'img/img4.jpg' %}",
+              descripcion: 'decoracion con circulo'
+          },
+          {
+              id: 10,
+              nombre: 'Decoracion Casa de Papel',
+              precio: 200000,
+              imagen: "{% static 'img/img5.jpg' %}",
+              descripcion: 'decoracion con cortinas '
+          }
+  
+      ];
+  </script>
+  
+  <script src="{% static 'js/producto.js' %}"></script>
 
 {% endblock content %}

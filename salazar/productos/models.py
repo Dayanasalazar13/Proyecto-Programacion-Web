@@ -19,3 +19,6 @@ class UsuariosTabla(models.Model):
     password2= models.CharField(max_length=30)
 
 
+
+
+
